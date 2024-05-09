@@ -1,25 +1,11 @@
-import Image from "next/image";
-import Link from "next/link";
-import Navbar from "./component/navbar";
-import vercel from "../public/vercel.svg";
+import React from 'react'
+import Navbar from '../component/navbar'
 
-export default function Home() {
+const about = () => {
   return (
-    <div className="flex-1">
-      <Navbar />
-      <div className="bg-[#d0f0c8] h-80 flex flex-row justify-around pt-32">
-        <div>
-          <div className="flex w-20 h-10 bg-[#c7efbd] justify-center items-center rounded-md border-2 border-[#6db15c] font-sans font-semibold">
-            🖐Hallo
-          </div>
-          <h2 className="font-sans font-bold">I'm Ahmad Riyo, A</h2>
-          <h2 className="font-sans font-bold">Frontend Developer & Mobile Developer</h2>
-        </div>
-        <div>
-          <Image alt="vercel" src={vercel} />
-        </div>
-      </div>
-      <div className="bg-[#baf1ac] h-auto pb-10 flex flex-row justify-around pt-20">
+    <>
+    <Navbar/>
+    <div className="bg-[#baf1ac] h-screen pb-10 flex flex-row justify-around pt-20">
         <div className=" w-1/2"> 
           <h2 className="mb-2 font-sans font-bold">About</h2>
           <p>Ahmad Riyo Kusuma Front End Engineer <br />Hi, I am Farih, a Professional Software Developer.</p>
@@ -41,12 +27,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-[#c1f3b4] h-80 flex flex-row justify-around pt-32">
-        <h2>Portofolio</h2>
-      </div>
-      <div className="bg-[#9ad88b] h-80 flex flex-row justify-around pt-32">
-        <h2>Contact</h2>
-      </div>
-    </div>
-  );
+    </>
+  )
 }
+
+export default about
