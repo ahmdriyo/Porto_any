@@ -2,7 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "./component/navbar";
 import vercel from "../public/vercel.svg";
-
+import About from "./about";
+import mobileApp1 from '../public/img/mobileApp1.svg';
+import mobileApp2 from '../public/img/mobileApp2.svg';
+import mobileApp3 from '../public/img/mobileApp3.svg';
 export default function Home() {
   return (
     <div className="flex-1">
@@ -13,36 +16,75 @@ export default function Home() {
             🖐Hallo
           </div>
           <h2 className="font-sans font-bold">I'm Ahmad Riyo, A</h2>
-          <h2 className="font-sans font-bold">Frontend Developer & Mobile Developer</h2>
+          <h2 className="font-sans font-bold">
+            Frontend Developer & Mobile Developer
+          </h2>
         </div>
         <div>
           <Image alt="vercel" src={vercel} />
         </div>
       </div>
-      <div className="bg-[#baf1ac] h-auto pb-10 flex flex-row justify-around pt-20">
-        <div className=" w-1/2"> 
-          <h2 className="mb-2 font-sans font-bold">About</h2>
-          <p>Ahmad Riyo Kusuma Front End Engineer <br />Hi, I am Farih, a Professional Software Developer.</p>
-          <br />
-          <p>I commenced my professional journey in 2020 as a Web Front End programmer, engaging in a multitude of projects and contributing to the development of diverse applications. My expertise primarily revolves around the Front End aspect, encompassing web, and mobile applications.</p>
-          <br />
-          <p>I have a strong passion for technology and science. I enjoy coding and constantly seek opportunities to expand my knowledge and skills in building innovative solutions. It is this passion that drives my determination to excel and become a proficient engineer.</p>
+      <About/>
+      <div className="content-port bg-[#c1f3b4] pb-20 justify-start pt-10 gap-2">
+        <div className="menu-port flex flex-row">
+          <h2 className="flex justify-center items-center border-ports">Portofolio</h2>
+          <button className="flex justify-center items-center border-port">Mobile App</button>
+          <button className="flex justify-center items-center border-port">Web App</button>
+          <button className="flex justify-center items-center border-port">Desain App</button>
         </div>
-        <div className="justify-start items-start w-96">
-          <h2 className="mb-2 font-sans font-bold">Skill</h2>
-          <div className="flex flex-wrap w-96">
-            <p className="skil-border border-[#3e6534]">#Node JS</p>
-            <p className="skil-border border-[#6bec4b]">#React Native</p>
-            <p className="skil-border border-[#7faaef]">#React JS</p>
-            <p className="skil-border border-[#78b06a]">#MongoDB</p>
-            <p className="skil-border border-[#e63737]">#RES API</p>
-            <p className="skil-border border-[#f78ccb]">#MYSQL</p>
-            <p className="skil-border border-[#882c9a]">#MERN</p>
+        <div className=" flex flex-row justify-evenly">
+          <div className="flex flex-col justify-center items-center card">
+            <div className="card-top bg-[#81eb75]">
+              <Image alt="mobileApp1" src={mobileApp2}/>
+            </div>
+            <div className="card-bottom flex flex-col">
+              <div className="mt-2 mb-1">
+                <h1 className="font-sans font-bold">Health Fit Aplikasi Kesehatan(2022) </h1>
+              </div>
+              <div className="card-item-bottom flex flex-wrap gap-2">
+                <p className="border-item-card">#typscipt</p>
+                <p className="border-item-card">#react native</p>
+                <p className="border-item-card">#node-js</p>
+                <p className="border-item-card">#res-api</p>
+                <p className="border-item-card">#tailwind</p>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col justify-center items-center card">
+            <div className="card-top bg-[#8ea1f7]">
+              <Image alt="mobileApp1" src={mobileApp1}/>
+            </div>
+            <div className="card-bottom flex flex-col">
+              <div className="mt-2 mb-1">
+                <h1 className="font-sans font-bold">Health Fit Aplikasi Kesehatan(2022) </h1>
+              </div>
+              <div className="card-item-bottom flex flex-wrap gap-2">
+                <p className="border-item-card">#typscipt</p>
+                <p className="border-item-card">#react native</p>
+                <p className="border-item-card">#node-js</p>
+                <p className="border-item-card">#res-api</p>
+                <p className="border-item-card">#tailwind</p>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col justify-center items-center card">
+            <div className="card-top bg-[#FD76AF]">
+              <Image alt="mobileApp1" src={mobileApp3}/>
+            </div>
+            <div className="card-bottom flex flex-col">
+              <div className="mt-2 mb-1">
+                <h1 className="font-sans font-bold">Health Fit Aplikasi Kesehatan(2022) </h1>
+              </div>
+              <div className="card-item-bottom flex flex-wrap gap-2">
+                <p className="border-item-card">#typscipt</p>
+                <p className="border-item-card">#react native</p>
+                <p className="border-item-card">#node-js</p>
+                <p className="border-item-card">#res-api</p>
+                <p className="border-item-card">#tailwind</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="bg-[#c1f3b4] h-80 flex flex-row justify-around pt-32">
-        <h2>Portofolio</h2>
       </div>
       <div className="bg-[#9ad88b] h-80 flex flex-row justify-around pt-32">
         <h2>Contact</h2>

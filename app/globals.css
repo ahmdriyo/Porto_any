@@ -38,14 +38,104 @@ body {
 
 .skil-border {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   text-align: center;
   align-items: center;
   border-width: 4px;
-  margin: 2px;
+  margin: 3px;
   padding: 10px;
   height: 40px;
   background-color: aquamarine;
   font-family: sans-serif;
   font-weight: 600;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.skil-border:hover {
+  transform: scale(1.1); /* Untuk memperbesar komponen saat dihover */
+}
+
+.content-about{
+  height: 450px;
+}
+.cts{
+  height: 670px;
+  background-color: #baf1ac;
+}
+.footer {
+  display: flex;
+  justify-content:center;
+  height: 60px;
+  margin-top: -55px;
+  background-color: rgba(149, 200, 136, 0.705);
+}
+
+
+.border-port{
+  text-align: center;
+  margin-right: 5px;
+  width: auto;
+  min-width: 110px;
+  height: 40px;
+  background-color: rgb(69, 199, 128);
+  border-width: 3px;
+  border-radius: 18px;
+  border-color: rgb(85, 143, 23);
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.border-ports{
+  text-align: center;
+  width: auto;
+  min-width: 110px;
+  height: 40px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.menu-port{
+  width: 25%;
+  margin-left: 80px;
+}
+.card{
+  width: 370px;
+  height: 350px;
+  background-color: #5dfd35;
+  border-radius: 20px;
+  /* border-width: 3px;
+  border-color: #205d10; */
+  margin-top: 20px;
+}
+
+.card-top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 240px;
+  
+  border-radius: 17px 17px 0 0;
+}
+.card-bottom{
+  display: flex;
+  padding-left: 12%;
+  width: 100%;
+  height: 130px;
+  background-color: #FCFFFE;
+  border-radius: 0 0 17px 17px;
+}
+.card-item-bottom{
+  width: 100%;
+}
+.border-item-card{
+  font-family:sans-serif;
+  font-weight: 600;
+  width: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+  height: 30px;
+  background-color: #baf1ac;
+  border-radius: 7px;
+  border-width: 0.1px;
+  border-color: rgb(201, 182, 114);
 }
