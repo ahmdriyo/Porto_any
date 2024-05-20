@@ -6,7 +6,7 @@ const about = () => {
   return (
     <>
       <Navbar />
-      <div className="cts h-screen">
+      <div className="about-page">
         <About />
       </div>
       <Footer />

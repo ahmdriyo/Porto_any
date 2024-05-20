@@ -3,8 +3,8 @@ import React from 'react'
 const About = () => {
   return (
     <>
-      <div className="content-about bg-[#baf1ac] pb-10 flex flex-row justify-around pt-20 ">
-        <div className=" w-1/2">
+      <div className="content-about bg-[#baf1ac] pb-10 pt-20">
+        <div className="border-content-about">
           <h2 className="mb-2 font-sans font-bold">About</h2>
           <p>
             Ahmad Riyo Kusuma Front End Engineer <br />
@@ -26,11 +26,11 @@ const About = () => {
             determination to excel and become a proficient engineer.
           </p>
         </div>
-        <div className="justify-start items-start w-96">
+        <div className="skil-content ">
           <h2 className="mb-2 font-sans font-bold border-b-4 border-[#8ca079]">
             Skill
           </h2>
-          <div className="flex flex-wrap w-96">
+          <div className="flex flex-wrap w-96 skil-border-content">
             <p className="skil-border border-[#3e6534]">#Node JS</p>
             <p className="skil-border border-[#6bec4b]">#React Native</p>
             <p className="skil-border border-[#7faaef]">#React JS</p>
@@ -41,7 +41,6 @@ const About = () => {
           </div>
         </div>
       </div>
-
     </>
   )
 }
