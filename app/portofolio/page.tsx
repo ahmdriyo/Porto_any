@@ -1,13 +1,19 @@
-import React from 'react'
-import Navbar from '../component/navbar'
-import Link from 'next/link'
 
-const Portofolio = () => {
+import React from 'react'
+import Navbar from '../component/navbar';
+import Footer from '../component/footer';
+import PortofolioFull from './portofolioFull';
+const Portofolios = () => {
   return (
-    <div>
+    <>
       <Navbar/>
-    </div>
+      <div className="cts h-screen">
+        <PortofolioFull/>
+      </div>
+      <Footer/>
+      
+    </>
   )
 }
 
-export default Portofolio
+export default Portofolios
